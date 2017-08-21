@@ -1,7 +1,23 @@
-$width-class: width- !default
 
+/* ------------------------
+  Width Coverage
+  # .width-1 ~ width-100 css
+------------------------ */
+$width-class: width- !default
 @for $i from 1 through 100 {
-  .#{$width-class}#{$i};
+  .#{$width-class}#{$i} {
     width: 0% + $i;
+  }
 }
+
+/* ------------------------
+  h1 ~ h5 CSS
+------------------------ */
+$h-size: h !default
+@for $i from 1 through 5 {
+  #{$h-size}#{$i} {
+    font-weight: normal;
+  }
+}
+
 

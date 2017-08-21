@@ -1,0 +1,56 @@
+@import "variable";
+@import "common";
+
+/* ------------------------
+  Global Tag
+------------------------ */
+body {
+  background: $bg-color
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: $fc-color;
+}
+
+button {
+  background: $fc-color;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px $buttonDark;
+  border: 0;
+  color: $fc-font-color;
+  font-size: 16px;
+  padding: 10px 30px;
+  display: inline-block;
+  outline: 0;
+
+  &:hover {
+    background: $buttonLight;
+    box-shadow: 0px 5px 0px $buttonLighter;
+    font-weight: bold;
+  }
+
+  &:active {
+    box-shadow: none;
+    margin-top: 5px;
+  }
+}
+
+/* ------------------------
+  Local Vue Element
+------------------------ */
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}

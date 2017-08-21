@@ -1,0 +1,44 @@
+/* ------------------------
+  - Global Color Variable
+------------------------ */
+$white: #ffffff;
+$dark-white: #f7f7f7;
+
+$light-gray: #757575;
+$dark-gray: #212121;
+
+$ocean: #0080ff;
+$blue: #0f47ff;
+
+/* ------------------------
+  - Global Grid Size Variable
+------------------------ */
+$header-height: 56px;
+
+
+/* ------------------------
+  - Dom Css Using Global Color Variable
+  # Background And Function Dom Color Variable using $Color Variable
+  # 'Function Dom' are Input, Button and so on elements.
+------------------------ */
+$bg-color: $white !default
+$fc-color: $ocean !default
+$fc-font-color: $white !default
+
+$fc-color-hover: darken($blue, 1%) !default
+
+
+/* ------------------------
+  - Global Boolean Variable
+------------------------ */
+$boolean: true !default
+
+
+/* ------------------------
+  - Button Variable
+  # Need modification Local Name into Global Name
+------------------------ */
+$buttonLight: lighten($fc-color, 10%);
+$buttonLighter: lighten($buttonLight, 10%);
+$buttonDark: darken($fc-color, 10%);
+$buttonDarker: darken($buttonDark, 10%);

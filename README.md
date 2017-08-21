@@ -5,11 +5,12 @@
 ```
 
 ## Goal
-- Understanding front-framework how to run with Vue Cli
-- SPA
+1. Understanding front-framework how to run with Vue Cli
+2. SPA
   1. CRUD Page
   2. Search Page
   3. Result Page
+3. For Attatching into Backend RestFul Project With Django, Flask, Spring, all
 
 
 ## Getting started process

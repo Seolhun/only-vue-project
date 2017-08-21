@@ -1,17 +1,25 @@
 <template>
+  <!-- built files will be auto injected -->
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+    <header-menu>
 
+    </header-menu>
+    <router-view>
+
+    </router-view>
+  </div>
 </template>
 
 <script>
+  import HeaderMenu from './components/layout/Header.vue'
+
   export default {
+    components: {HeaderMenu},
     name: 'app'
   }
 </script>
 
 <style lang="sass">
-  @import "assets/scss/main/main"
+  @import "assets/scss/app"
+
 </style>
