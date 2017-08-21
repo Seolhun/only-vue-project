@@ -1,7 +1,18 @@
 # first-vue
 
-> A Vue.js project
+```
+@author SeolHun
+```
 
+## Goal
+- Understanding front-framework how to run with Vue Cli
+- SPA
+  1. CRUD Page
+  2. Search Page
+  3. Result Page
+
+
+## Getting started process
 ## Build Setup
 
 ``` bash
