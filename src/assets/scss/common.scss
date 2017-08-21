@@ -1,0 +1,7 @@
+$width-class: width- !default
+
+@for $i from 1 through 100 {
+  .#{$width-class}#{$i};
+    width: 0% + $i;
+}
+
