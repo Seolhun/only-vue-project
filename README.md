@@ -1,7 +1,7 @@
 # first-vue
 
 ```
-@author SeolHun
+@Author SeolHun
 ```
 
 ## Goal
