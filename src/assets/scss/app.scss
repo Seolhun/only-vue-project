@@ -1,8 +1,7 @@
 @import "variable";
-@import "common";
 
 /* ------------------------
-  Global Tag
+  Global Tag CSS
 ------------------------ */
 body {
   background: $bg-color
@@ -46,7 +45,33 @@ button {
 }
 
 /* ------------------------
-  Local Vue Element
+  Global Tag CSS
+------------------------ */
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gradient-fc {
+  background: linear-gradient(180deg,#66a5ff,#0069ff);
+  color: $bg-color;
+
+  .btn, button {
+    background: $white;
+    color: $dark-gray;
+    font-weight: bold;
+  }
+}
+
+/* ------------------------
+  Global ID CSS
 ------------------------ */
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

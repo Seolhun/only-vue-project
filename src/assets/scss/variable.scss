@@ -1,19 +1,19 @@
-/* ------------------------
+/* ------------------------------------------------------------------------
   - Global Color Variable
------------------------- */
+-------------------------------------------------------------------------- */
 $white: #ffffff;
 $dark-white: #f7f7f7;
 
+$dark-gray: #333333;
 $light-gray: #757575;
-$dark-gray: #212121;
 
 $ocean: #0080ff;
 $blue: #0f47ff;
 
-/* ------------------------
+/* ------------------------------------------------------------------------
   - Global Grid Size Variable
------------------------- */
-$header-height: 56px;
+-------------------------------------------------------------------------- */
+$header-height: 80px;
 
 
 /* ------------------------
@@ -22,23 +22,78 @@ $header-height: 56px;
   # 'Function Dom' are Input, Button and so on elements.
 ------------------------ */
 $bg-color: $white !default
+$bg-font-color: $dark-gray;
+
 $fc-color: $ocean !default
 $fc-font-color: $white !default
+$fc-color-hover: darken($ocean, 1%) !default
 
-$fc-color-hover: darken($blue, 1%) !default
+$sub-fc-color: $light-gray !default
+$sub-fc-font-color: $light-gray !default
+$sub-fc-color-hover: darken($light-gray, 5%) !default
 
+
+
+/* ------------------------------------------------------------------------
+  - Global For Function SCSS Start
+-------------------------------------------------------------------------- */
+/* ------------------------
+  Width Coverage
+  # .width-1 ~ width-100 css
+------------------------ */
+$width-class: width- !default
+@for $i from 1 through 100 {
+  .#{$width-class}#{$i} {
+    width: 0% + $i;
+  }
+}
 
 /* ------------------------
-  - Global Boolean Variable
+  Height Coverage
+  # .Height-50 ~ Height-500 css
 ------------------------ */
+$height-class: height- !default
+@for $i from 50 through 500 {
+  .#{$height-class}#{$i} {
+    height: 0px + $i;
+  }
+}
+
+/* ------------------------
+  h1 ~ h5 CSS
+------------------------ */
+$h-size: h !default
+@for $i from 1 through 5 {
+  #{$h-size}#{$i} {
+    font-weight: normal;
+    font-size: 10px + (20 / $i);
+  }
+}
+
+/* ------------------------
+  padding-10 ~ padding-60 CSS
+------------------------ */
+$padding: padding- !default
+@for $i from 1 through 6 {
+  .#{$padding}#{$i*10} {
+    padding: 10px * $i;
+  }
+}
+
+
+/* ------------------------------------------------------------------------
+  - Global Boolean Variable
+-------------------------------------------------------------------------- */
 $boolean: true !default
 
 
-/* ------------------------
+/* ------------------------------------------------------------------------
   - Button Variable
   # Need modification Local Name into Global Name
------------------------- */
+-------------------------------------------------------------------------- */
 $buttonLight: lighten($fc-color, 10%);
 $buttonLighter: lighten($buttonLight, 10%);
 $buttonDark: darken($fc-color, 10%);
 $buttonDarker: darken($buttonDark, 10%);
+
+

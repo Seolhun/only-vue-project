@@ -1,0 +1,11 @@
+@import "../variable";
+
+.footer {
+  -ms-flex: none;
+  flex: none;
+  background-color: $dark-gray;
+}
+
+.u-contrast {
+  color: hsla(0,0%,100%,.8);
+}
