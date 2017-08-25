@@ -65,8 +65,8 @@ $height-class: height- !default
 $h-size: h !default
 @for $i from 1 through 5 {
   #{$h-size}#{$i} {
-    font-weight: normal;
-    font-size: 10px + (20 / $i);
+    font-weight: 500;
+    font-size: 15px + (20 / $i);
   }
 }
 
@@ -77,6 +77,16 @@ $padding: padding- !default
 @for $i from 1 through 6 {
   .#{$padding}#{$i*10} {
     padding: 10px * $i;
+  }
+}
+
+/* ------------------------
+  margin-10 ~ margin-60 CSS
+------------------------ */
+$margin: margin- !default
+@for $i from 1 through 6 {
+  .#{$margin}#{$i*10} {
+    margin: 10px * $i;
   }
 }
 

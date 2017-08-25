@@ -13,14 +13,13 @@
           <li>
             <router-link :to="'blog'" class="navigation-link">블로그</router-link>
           </li>
-          <li>
-            <router-link :to="'blog'" class="navigation-link">블로그</router-link>
-          </li>
+          <!--
           <li>
             <router-link :to="{ path: 'register', query: { plan: 'private' }}" class="navigation-link">
               회원가입
             </router-link>
           </li>
+          -->
         </ul>
       </nav>
 

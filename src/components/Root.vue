@@ -1,10 +1,13 @@
 <template>
   <div class="main">
-    <div class="height-300 gradient-fc padding-30">
-      <h1>{{ msg }}</h1>
+    <div class="margin-10">
+      <div class="gradient-fc height-300 padding-30">
+        <h1>For more information visit website</h1>
+        <button>Docs</button>
+      </div>
     </div>
 
-    <div class="padding-30">
+    <div class="margin-30 height-300">
       <h2>Essential Links</h2>
       <ul>
         <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
