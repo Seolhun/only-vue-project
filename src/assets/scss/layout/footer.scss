@@ -3,9 +3,13 @@
 .footer {
   -ms-flex: none;
   flex: none;
-  background-color: $dark-gray;
+  background-color: $black;
 }
 
-.u-contrast {
-  color: hsla(0,0%,100%,.8);
+.footer-header {
+  color: $bg-color;
+}
+
+.footer-header-a > li > a{
+  color: $fc-color;
 }

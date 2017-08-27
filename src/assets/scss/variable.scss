@@ -1,14 +1,25 @@
 /* ------------------------------------------------------------------------
   - Global Color Variable
 -------------------------------------------------------------------------- */
-$white: #ffffff;
-$dark-white: #f7f7f7;
+$black: #232323;
+$light-black: lighten($black, 30%);
+$dark-black: darken($black, 2%);
+$darker-black: darken($dark-black, 3%);
 
-$dark-gray: #333333;
-$light-gray: #757575;
+$white: #ffffff;
+$light-white: lighten($white, 30%);
+$dark-white: darken($white, 2%);
+$darker-white: darken($dark-white, 3%);
+
+$gray: #868e96;
+$light-gray: lighten($gray, 30%);
+$dark-gray: darken($gray, 2%);
+$darker-gray: darken($dark-gray, 3%);
 
 $ocean: #0080ff;
-$blue: #0f47ff;
+$light-ocean: lighten($ocean, 30%);
+$dark-ocean: darken($ocean, 2%);
+$darker-ocean: darken($dark-ocean, 3%);
 
 /* ------------------------------------------------------------------------
   - Global Grid Size Variable
@@ -19,19 +30,22 @@ $header-height: 80px;
 /* ------------------------
   - Dom Css Using Global Color Variable
   # Background And Function Dom Color Variable using $Color Variable
-  # 'Function Dom' are Input, Button and so on elements.
+  # 'Function Dom' are Input, Button and another elements.
 ------------------------ */
 $bg-color: $white !default
-$bg-font-color: $dark-gray;
+$bg-font-color: $light-black;
+$bg-color-hover: $light-white;
+$bg-color-shadow: $dark-white;
 
 $fc-color: $ocean !default
 $fc-font-color: $white !default
-$fc-color-hover: darken($ocean, 1%) !default
+$fc-color-hover: $light-ocean !default
+$fc-color-shadow: $darker-ocean !default
 
-$sub-fc-color: $light-gray !default
-$sub-fc-font-color: $light-gray !default
-$sub-fc-color-hover: darken($light-gray, 5%) !default
-
+$sub-fc-color: $gray !default
+$sub-fc-font-color: $black !default
+$sub-fc-color-hover: $light-gray !default
+$sub-fc-color-shadow: $darker-gray !default
 
 
 /* ------------------------------------------------------------------------
@@ -66,7 +80,8 @@ $h-size: h !default
 @for $i from 1 through 5 {
   #{$h-size}#{$i} {
     font-weight: 500;
-    font-size: 15px + (20 / $i);
+    font-size: 15px + (30 / $i);
+    padding: 15px 0px;
   }
 }
 
@@ -86,24 +101,19 @@ $padding: padding- !default
 $margin: margin- !default
 @for $i from 1 through 6 {
   .#{$margin}#{$i*10} {
-    margin: 10px * $i;
+    margin: 10px * $i 0px;
   }
 }
+
+/* ------------------------------------------------------------------------
+  - Media Size Variable
+-------------------------------------------------------------------------- */
+$media-medium: 1024px;
+$media-small: 640px;
 
 
 /* ------------------------------------------------------------------------
   - Global Boolean Variable
 -------------------------------------------------------------------------- */
 $boolean: true !default
-
-
-/* ------------------------------------------------------------------------
-  - Button Variable
-  # Need modification Local Name into Global Name
--------------------------------------------------------------------------- */
-$buttonLight: lighten($fc-color, 10%);
-$buttonLighter: lighten($buttonLight, 10%);
-$buttonDark: darken($fc-color, 10%);
-$buttonDarker: darken($buttonDark, 10%);
-
 

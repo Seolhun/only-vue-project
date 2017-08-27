@@ -3,6 +3,7 @@
 /* ------------------------
   Global Tag CSS
 ------------------------ */
+
 body {
   background: $bg-color;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -22,20 +23,18 @@ a {
   color: $fc-color;
 }
 
-button {
+button.fc-btn {
   background: $fc-color;
-  border-radius: 5px;
-  box-shadow: 0px 5px 0px $buttonDark;
-  border: 0;
   color: $fc-font-color;
+  border-radius: 5px;
+  border: 0;
   font-size: 16px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   display: inline-block;
   outline: 0;
 
   &:hover {
-    background: $buttonLight;
-    box-shadow: 0px 5px 0px $buttonLighter;
+    background: $fc-color-hover;
     font-weight: bold;
   }
 
@@ -61,13 +60,24 @@ button {
 }
 
 .gradient-fc {
-  background: linear-gradient(180deg,#66a5ff,#0069ff);
+  background: linear-gradient(180deg, #66a5ff, #0069ff);
   color: $bg-color;
 
-  .btn, button {
-    background: $white;
-    color: $dark-gray;
+  button.fc-btn {
+    background: $bg-color;
+    color: $sub-fc-font-color;
+    border-radius: 5px;
     font-weight: bold;
+
+    &:hover {
+      background: $sub-fc-color-hover;
+      font-weight: bold;
+    }
+
+    &:active {
+      box-shadow: none;
+      margin-top: 5px;
+    }
   }
 }
 
@@ -78,5 +88,4 @@ button {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }

@@ -8,10 +8,26 @@
         </router-link>
       </div>
 
+
+
       <nav class="header-navigation">
-        <ul class="header-navigation-wrap u-unstyled hide-before-lg">
+        <ul class="header-navigation-wrap u-unstyled header-show">
           <li>
-            <router-link :to="'blog'" class="navigation-link">블로그</router-link>
+            <a class="navigation-link nav-toggle active" aria-hidden="false">
+            </a>
+          </li>
+        </ul>
+        <ul class="header-navigation-wrap u-unstyled header-hide">
+          <li>
+            <router-link :to="'blog'" class="navigation-link">Blog</router-link>
+          </li>
+
+          <li>
+            <router-link :to="'lotto'" class="navigation-link">Lotto</router-link>
+          </li>
+
+          <li>
+            <router-link :to="'lotto'" class="navigation-link">Contact</router-link>
           </li>
           <!--
           <li>
