@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/Seolhun/only-vue-project.png?label=ready&title=Ready)](https://waffle.io/Seolhun/only-vue-project?utm_source=badge)
 # first-vue
 
 ```
