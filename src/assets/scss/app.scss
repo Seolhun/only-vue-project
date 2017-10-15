@@ -45,7 +45,7 @@ button.fc-btn {
 }
 
 /* ------------------------
-  Global Tag CSS
+  Global Class CSS
 ------------------------ */
 .text-right {
   text-align: right;
@@ -79,6 +79,10 @@ button.fc-btn {
       margin-top: 5px;
     }
   }
+}
+
+.shadow-box {
+  box-shadow: $gray;
 }
 
 /* ------------------------

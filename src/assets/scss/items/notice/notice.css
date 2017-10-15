@@ -758,15 +758,5 @@ h5 {
 /* ------------------------------------------------------------------------
   - Global Boolean Variable
 -------------------------------------------------------------------------- */
-.footer {
-  -ms-flex: none;
-  flex: none;
-  background-color: #232323; }
 
-.footer-header {
-  color: #ffffff; }
-
-.footer-header-a > li > a {
-  color: #0080ff; }
-
-/*# sourceMappingURL=footer.css.map */
+/*# sourceMappingURL=notice.css.map */

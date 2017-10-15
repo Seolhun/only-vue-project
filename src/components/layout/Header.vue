@@ -8,8 +8,6 @@
         </router-link>
       </div>
 
-
-
       <nav class="header-navigation">
         <ul class="header-navigation-wrap u-unstyled header-show">
           <li>
@@ -19,16 +17,21 @@
         </ul>
         <ul class="header-navigation-wrap u-unstyled header-hide">
           <li>
+            <router-link :to="'notice'" class="navigation-link">Notice</router-link>
+          </li>
+          <li>
+            <router-link :to="'supporter'" class="navigation-link">Supporter</router-link>
+          </li>
+          <li>
+            <router-link :to="'study'" class="navigation-link">Study</router-link>
+          </li>
+          <li>
             <router-link :to="'blog'" class="navigation-link">Blog</router-link>
           </li>
-
           <li>
-            <router-link :to="'lotto'" class="navigation-link">Lotto</router-link>
+            <router-link :to="'contact'" class="navigation-link">Contact</router-link>
           </li>
 
-          <li>
-            <router-link :to="'lotto'" class="navigation-link">Contact</router-link>
-          </li>
           <!--
           <li>
             <router-link :to="{ path: 'register', query: { plan: 'private' }}" class="navigation-link">
