@@ -1,43 +1,40 @@
 <template>
   <div>
-    <b-jumbotron class="gradient-fc" header="Blog" lead="Bootstrap 4 Components for Vue.js 2">
-      <div class="row margin-20">
-        <div class="col-sm-12">
-          <div class="text-right">
-            <button class="fc-btn">Write</button>
-          </div>
-        </div>
-      </div>
-    </b-jumbotron>
-
     <div class="container">
-      <div class="row margin-20">
-        <div class="col-sm-12">
-          <blog-table>
+      <el-row class="margin-bottom-30 margin-top-30">
+        <bread-crumb></bread-crumb>
+      </el-row>
 
-          </blog-table>
-        </div>
-      </div>
+      <el-row class="margin-bottom-30 margin-top-30">
+        <el-col :sm="24">
+          <el-button type="primary" icon="edit">Search</el-button>
+        </el-col>
+      </el-row>
+
+
+      <blog-table>
+
+      </blog-table>
     </div>
   </div>
 </template>
 
 <script>
   import BlogTable from './BlogTable.vue'
+  import BreadCrumb from 'components/layout/BreadCrumb.vue'
 
   export default {
-    components: {BlogTable},
+    components: {BlogTable, BreadCrumb},
     data () {
       return {
-        watch: {
-
-        }
+        watch: {}
       }
     }
   }
 </script>
 
 <style lang="scss">
+  @import "../../../assets/scss/items/blog/blog";
 
 </style>
 

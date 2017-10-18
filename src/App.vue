@@ -1,12 +1,11 @@
 <template>
-  <!-- built files will be auto injected -->
   <div id="app">
     <header-menu>
 
     </header-menu>
-    <router-view>
-
-    </router-view>
+    <div class="margin-top-30 margin-bottom-30">
+      <router-view></router-view>
+    </div>
     <footer-menu>
 
     </footer-menu>

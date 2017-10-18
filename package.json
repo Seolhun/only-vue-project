@@ -16,6 +16,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "bootstrap-vue": "^1.0.0-beta.5",
+    "element-ui": "^1.4.7",
     "vue": "^2.4.2",
     "vue-axios": "^2.0.2",
     "vue-router": "^2.6.0"

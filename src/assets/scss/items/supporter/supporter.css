@@ -1,0 +1,40 @@
+/*
+Error: Invalid @import: expected end of line, was ";".
+        on line 1 of supporter
+
+1: @import "../../variable";
+2: 
+3: .el-carousel__item h3 {
+4:   color: #475669;
+5:   font-size: 14px;
+6:   opacity: 0.75;
+
+Backtrace:
+supporter:1
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:1034:in `parse_import_directive'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:838:in `parse_directive'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:655:in `parse_line'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:540:in `build_tree'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:559:in `block in append_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:558:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:558:in `append_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:417:in `_to_tree'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.1/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:22:in `load'
+/usr/local/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid @import: expected end of line, was \";\".\A         on line 1 of supporter\A \A 1: @import \"../../variable\";\A 2: \A 3: .el-carousel__item h3 {\A 4:   color: #475669;\A 5:   font-size: 14px;\A 6:   opacity: 0.75;"; }

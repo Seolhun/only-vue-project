@@ -3,7 +3,6 @@ import Router from 'vue-router'
 
 import Root from '@/components/Root'
 import Notice from '@/components/items/notice/Notice'
-import Study from '@/components/items/study/Study'
 import Blog from '@/components/items/blog/Blog'
 import Contact from '@/components/items/contact/Contact'
 import Supporter from '@/components/items/supporter/Supporter'
@@ -22,11 +21,6 @@ export default new Router({
       component: Notice
     },
     {
-      path: '/study',
-      name: 'Study',
-      component: Study
-    },
-    {
       path: '/blog',
       name: 'Blog',
       component: Blog
@@ -41,5 +35,16 @@ export default new Router({
       name: 'Supporter',
       component: Supporter
     }
-  ]
+  ],
+  mode: 'history',
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else if (to.hash) {
+      return {
+        selector: to.hash
+      }
+    }
+    return {x: 0, y: 700}
+  }
 })

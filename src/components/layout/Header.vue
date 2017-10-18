@@ -23,22 +23,11 @@
             <router-link :to="'supporter'" class="navigation-link">Supporter</router-link>
           </li>
           <li>
-            <router-link :to="'study'" class="navigation-link">Study</router-link>
-          </li>
-          <li>
             <router-link :to="'blog'" class="navigation-link">Blog</router-link>
           </li>
           <li>
             <router-link :to="'contact'" class="navigation-link">Contact</router-link>
           </li>
-
-          <!--
-          <li>
-            <router-link :to="{ path: 'register', query: { plan: 'private' }}" class="navigation-link">
-              회원가입
-            </router-link>
-          </li>
-          -->
         </ul>
       </nav>
 
