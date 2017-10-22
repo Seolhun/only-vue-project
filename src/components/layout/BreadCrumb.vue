@@ -8,7 +8,13 @@
 </template>
 
 <script>
-
+  export default {
+    props: ['path'],
+    data () {
+      return {
+      }
+    }
+  }
 </script>
 
 <style lang="scss">

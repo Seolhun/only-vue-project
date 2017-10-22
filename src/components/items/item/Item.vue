@@ -1,10 +1,6 @@
 <template>
   <div>
     <el-row class="margin-bottom-30 margin-top-30">
-      <bread-crumb></bread-crumb>
-    </el-row>
-
-    <el-row class="margin-bottom-30 margin-top-30">
       <el-col :sm="24">
         <el-button type="primary" icon="edit">Search</el-button>
       </el-col>
@@ -18,11 +14,10 @@
 </template>
 
 <script>
-  import BlogTable from './BlogTable.vue'
-  import BreadCrumb from 'components/layout/BreadCrumb.vue'
+  import ItemList from './ItemList.vue'
 
   export default {
-    components: {BlogTable, BreadCrumb},
+    components: {ItemList},
     data () {
       return {
         watch: {}
