@@ -1,15 +1,12 @@
 <template>
-  <div>
-    <el-row class="margin-bottom-30 margin-top-30">
-      <bread-crumb></bread-crumb>
-    </el-row>
-
-    <el-row class="margin-bottom-30 margin-top-30">
-      <el-col :sm="24">
-        <el-button type="primary" icon="edit">Search</el-button>
-      </el-col>
-    </el-row>
-
+  <div class="container">
+    <div class="el-row margin-top-30">
+      <div class="el-col-md-24 text-right">
+        <router-link :to="'editor'" class="navigation-link">
+          <el-button type="primary">Editor</el-button>
+        </router-link>
+      </div>
+    </div>
 
     <blog-table>
 
@@ -19,10 +16,11 @@
 
 <script>
   import BlogTable from './BlogTable.vue'
-  import BreadCrumb from 'components/layout/BreadCrumb.vue'
 
   export default {
-    components: {BlogTable, BreadCrumb},
+    components: {
+      BlogTable
+    },
     data () {
       return {
         watch: {}

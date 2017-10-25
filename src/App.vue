@@ -3,9 +3,11 @@
     <header-menu>
 
     </header-menu>
-    <bread-crumb>
+    <div class="margin-top-30 margin-bottom-30">
+      <bread-crumb>
 
-    </bread-crumb>
+      </bread-crumb>
+    </div>
 
     <div class="margin-top-30 margin-bottom-30">
       <router-view></router-view>

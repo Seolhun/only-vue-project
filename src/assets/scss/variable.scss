@@ -21,6 +21,12 @@ $light-ocean: lighten($ocean, 15%);
 $dark-ocean: darken($ocean, 2%);
 $darker-ocean: darken($dark-ocean, 3%);
 
+/* ------------------------
+  - Media Size Variable
+------------------------ */
+$media-medium: 1024px;
+$media-small: 700px;
+
 /* ------------------------------------------------------------------------
   - Global Grid Size Variable
 -------------------------------------------------------------------------- */
@@ -135,7 +141,7 @@ $margin: margin- !default;
 
 $margin-top: margin-top- !default;
 @for $i from 1 through 20 {
-  .#{$margin-top}#{$i*10} {
+  .#{$margin-top}#{$i * 10} {
     margin-top: (5px * $i);
   }
 }
@@ -160,12 +166,6 @@ $margin-left: margin-left- !default;
     margin-left: (5px * $i);
   }
 }
-
-/* ------------------------------------------------------------------------
-  - Media Size Variable
--------------------------------------------------------------------------- */
-$media-medium: 1024px;
-$media-small: 640px;
 
 /* ------------------------------------------------------------------------
   - Global Boolean Variable

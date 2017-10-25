@@ -1,31 +1,10 @@
 @import "../../variable";
 
-.time {
-  font-size: 13px;
-  color: #999;
+.blog-created-by {
+  font-size: 14px;
 }
 
-.bottom {
-  margin-top: 13px;
-  line-height: 12px;
-}
-
-.button {
-  padding: 0;
-  float: right;
-}
-
-.image {
-  width: 100%;
-  display: block;
-}
-
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-
-.clearfix:after {
-  clear: both
+.blog-title {
+  font-size: 24px;
+  font-weight: 600;
 }

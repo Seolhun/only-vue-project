@@ -4,15 +4,15 @@ import Router from 'vue-router'
 import Root from '@/components/Root'
 import Notice from '@/components/items/notice/Notice'
 import Blog from '@/components/items/blog/Blog'
-import Contact from '@/components/items/contact/Contact'
 import Supporter from '@/components/items/supporter/Supporter'
+import MarkdownEditor from '@/components/common/editor/MarkdownEditor.vue'
 
 Vue.use(Router)
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Root',
+      name: 'Home',
       component: Root
     },
     {
@@ -26,18 +26,24 @@ export default new Router({
       component: Blog
     },
     {
-      path: '/contact',
-      name: 'Contact',
-      component: Contact
+      path: '/aboutme',
+      name: 'About Me',
+      component: Blog
     },
     {
-      path: '/supporter',
-      name: 'Supporter',
+      path: '/supporters',
+      name: 'Supporters',
       component: Supporter
+    },
+    {
+      path: '/editor',
+      name: 'Markdown',
+      component: MarkdownEditor
     }
   ],
   mode: 'history',
   scrollBehavior (to, from, savedPosition) {
+    document.title = 'Hi-Cord : ' + to.name
     if (savedPosition) {
       return savedPosition
     } else if (to.hash) {

@@ -82,14 +82,18 @@ button.fc-btn {
 }
 
 .shadow-box {
-  box-shadow: $gray;
+  box-shadow: -10px -10px 10px 10px $gray;
 }
 
 /* ------------------------
   Global ID CSS
 ------------------------ */
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ------------------------
+  Customize Element-UI CSS
+------------------------ */

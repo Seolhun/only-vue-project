@@ -1,6 +1,9 @@
 /* ------------------------------------------------------------------------
   - Global Color Variable
 -------------------------------------------------------------------------- */
+/* ------------------------
+  - Media Size Variable
+------------------------ */
 /* ------------------------------------------------------------------------
   - Global Grid Size Variable
 -------------------------------------------------------------------------- */
@@ -753,9 +756,6 @@ h5 {
   margin-left: 100px; }
 
 /* ------------------------------------------------------------------------
-  - Media Size Variable
--------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------
   - Global Boolean Variable
 -------------------------------------------------------------------------- */
 .header {
@@ -851,7 +851,7 @@ h5 {
   display: none;
   visibility: hidden; }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
   .header-hide {
     display: none;
     visibility: hidden; }
@@ -862,12 +862,17 @@ h5 {
     visibility: visible; } }
 .header-navigation .navigation-link {
   border-bottom: 2px solid transparent;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 30px;
   -webkit-transition: color .2s;
   transition: color .2s;
-  font-size: .875rem; }
+  font-size: 15px;
+  cursor: pointer; }
+
+.router-link-active {
+  font-weight: 500;
+  color: #0080ff; }
 
 .header a {
   align-items: center;
