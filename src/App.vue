@@ -25,8 +25,18 @@
   import BreadCrumb from './components/layout/BreadCrumb.vue'
 
   export default {
-    components: {HeaderMenu, FooterMenu, BreadCrumb},
-    name: 'app'
+    components: {
+      HeaderMenu,
+      FooterMenu,
+      BreadCrumb
+    },
+    name: 'app',
+    data () {
+      return {}
+    },
+    methods: {
+    },
+    computed: ''
   }
 </script>
 

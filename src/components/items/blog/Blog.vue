@@ -8,22 +8,40 @@
       </div>
     </div>
 
-    <blog-table>
+    <pagination
+      :pageSize="results.pageSize"
+      :pageIndex="results.pageIndex"
+      :totalCount="results.totalCount"
+    >
+    </pagination>
 
-    </blog-table>
+    <card-list
+      :items="filterResults"
+      :filter="filter"
+    >
+
+    </card-list>
+
   </div>
 </template>
 
 <script>
-  import BlogTable from './BlogTable.vue'
+  import CardList from '@/components/common/mixin/list/CardList.vue'
+  import Pagination from '@/components/common/mixin/list/Pagination'
+  import {filterMixin} from '@/components/common/mixin/list/filterMixin.js'
 
   export default {
+    mixins: [filterMixin],
     components: {
-      BlogTable
+      CardList, Pagination
     },
     data () {
       return {
-        watch: {}
+        watch: {
+          pageIndex: (value) => {
+            console.log('Blog', value)
+          }
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 <template>
-  <header id="header container" class="header shadow-box">
-    <div class="header-wrap row">
+  <header id="header container row" class="header header-shadow-box">
+    <div class="header-wrap el-col-sm-24">
       <a href="#" id="menu-open" class="menu-open header-btn i-menu hide-after-lg"></a>
       <div class="header-logo">
         <router-link :to="'/'" class="header-logo-link">

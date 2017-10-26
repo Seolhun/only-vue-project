@@ -10,7 +10,6 @@
           :model="content"
 
         >
-
         </mavon-editor>
       </div>
     </div>
@@ -36,9 +35,7 @@
       }
     },
     methods: {},
-    coumputed: {},
     watch: {
-
     },
     mounted () {
       setInterval(() => {
@@ -46,5 +43,4 @@
       }, 1000)
     }
   }
-
 </script>
