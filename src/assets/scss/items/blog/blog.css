@@ -864,15 +864,11 @@ h5 {
 /* ------------------------------------------------------------------------
   - Global Boolean Variable
 -------------------------------------------------------------------------- */
-.footer {
-  -ms-flex: none;
-  flex: none;
-  background-color: #232323; }
+.blog-created-by {
+  font-size: 14px; }
 
-.footer-header {
-  color: #ffffff; }
+.blog-title {
+  font-size: 24px;
+  font-weight: 600; }
 
-.footer-header-a > li > a {
-  color: #0080ff; }
-
-/*# sourceMappingURL=footer.css.map */
+/*# sourceMappingURL=blog.css.map */

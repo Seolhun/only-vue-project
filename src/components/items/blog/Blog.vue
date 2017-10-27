@@ -1,43 +1,72 @@
 <template>
-  <div>
-    <b-jumbotron class="gradient-fc" header="Blog" lead="Bootstrap 4 Components for Vue.js 2">
-      <div class="row margin-20">
-        <div class="col-sm-12">
-          <div class="text-right">
-            <button class="fc-btn">Write</button>
-          </div>
-        </div>
+  <div class="container">
+    <div class="el-row margin-top-30">
+      <div class="el-col-md-24 text-right">
+        <router-link :to="'editor'" class="navigation-link">
+          <el-button type="primary">Editor</el-button>
+        </router-link>
       </div>
-    </b-jumbotron>
+    </div>
 
-    <div class="container">
-      <div class="row margin-20">
-        <div class="col-sm-12">
-          <blog-table>
-
-          </blog-table>
-        </div>
-      </div>
+    <div class="el-row margin-top-30">
+      <main-list
+        :listType="listType"
+        :results="results"
+        :filters="filters"
+      >
+      </main-list>
     </div>
   </div>
 </template>
 
 <script>
-  import BlogTable from './BlogTable.vue'
+  import DummyBlogs from '@/assets/dummy/blog.json'
+  import MainList from '@/components/common/list/MainList'
 
   export default {
-    components: {BlogTable},
+    components: {
+      MainList
+    },
     data () {
       return {
-        watch: {
-
+        listType: 1,
+        // items is Array
+        results: {
+          items: DummyBlogs,
+          pageIndex: 1,
+          pageSize: 12,
+          totalCount: DummyBlogs.length
+        },
+        filters: {
+          type: 1,
+          text: '',
+          sortBy: 'desc'
         }
+      }
+    },
+    methods: {
+      // mouted Set Results
+      mounted () {
+        console.log('Mounted')
+        // axios.get("/fa").then(response => this.results = response.data);
+      }
+    },
+    watch: {
+      filters (value) {
+        console.log('filters', value)
+      },
+      pageIndex (value) {
+        console.log('watch pageIndex', value)
+      },
+      pageSize (value) {
+        console.log('watch pageSize', value)
       }
     }
   }
 </script>
 
 <style lang="scss">
+  @import "../../../assets/scss/items/blog/blog";
 
 </style>
 

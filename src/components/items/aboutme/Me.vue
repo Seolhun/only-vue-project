@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row margin-20">
       <div class="col-sm-4"
-      >
 
+      >
       </div>
     </div>
   </div>
@@ -12,16 +12,11 @@
 <script>
   export default {
     data () {
-      return {
-
-      }
+      return {}
     },
-    methods: {
-    },
-    computed: {
-    },
-    watch: {
-    }
+    methods: {},
+    computed: {},
+    watch: {}
   }
 </script>
 
