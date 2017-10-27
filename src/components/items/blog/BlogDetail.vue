@@ -1,19 +1,14 @@
 <template>
-  <div class="container">
-    <div class="row margin-20">
-      <div class="col-sm-4"
-
-      >
-
-      </div>
-    </div>
+  <div>
+    <h2>Blog Detail</h2>
   </div>
 </template>
 
 <script>
   export default {
     data () {
-      return {}
+      return {
+      }
     },
     methods: {},
     computed: {},
@@ -24,4 +19,3 @@
 <style lang="scss">
 
 </style>
-

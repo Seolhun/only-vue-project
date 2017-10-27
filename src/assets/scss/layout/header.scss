@@ -103,6 +103,7 @@
   visibility: hidden;
 }
 
+// To Open header menu - When Media-small size
 @media screen and (max-width: $media-small) {
   .header-hide {
     display: none;
@@ -118,12 +119,18 @@
 
 .header-navigation .navigation-link {
   border-bottom: 2px solid transparent;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 30px;
   -webkit-transition: color .2s;
   transition: color .2s;
-  font-size: .875rem;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.router-link-active {
+  font-weight: 500;
+  color: $fc-color;
 }
 
 .header a {
@@ -140,4 +147,12 @@
     color: $sub-fc-color-hover;
     font-weight: bold;
   }
+}
+
+
+/* ------------------------
+  Local Custom Class CSS
+------------------------ */
+.header-shadow-box {
+  box-shadow: -10px -10px 10px 10px $gray;
 }

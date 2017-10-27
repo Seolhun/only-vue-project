@@ -1,17 +1,30 @@
 <template>
-  <el-breadcrumb separator="/">
-    <el-breadcrumb-item :to="{ path: '/' }">homepage</el-breadcrumb-item>
-    <el-breadcrumb-item>promotion management</el-breadcrumb-item>
-    <el-breadcrumb-item>promotion list</el-breadcrumb-item>
-    <el-breadcrumb-item>promotion detail</el-breadcrumb-item>
-  </el-breadcrumb>
+  <div class="container" id="markdown">
+    <div class="el-row">
+      <div class="el-col-md-24">
+        <el-breadcrumb separator="/">
+          <el-breadcrumb-item
+            :to="{ path: '/' }"
+          >
+            fdas
+          </el-breadcrumb-item>
+        </el-breadcrumb>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
   export default {
-    props: ['path'],
+    props: ['Test', 'Test2'],
     data () {
       return {
+        paths: []
+      }
+    },
+    computed: {
+      init () {
+        this.paths = this.props
       }
     }
   }

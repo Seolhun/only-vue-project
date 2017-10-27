@@ -1,6 +1,6 @@
 <template>
-  <header id="header container" class="header toolbar-shadow">
-    <div class="header-wrap row">
+  <header id="header container row" class="header header-shadow-box">
+    <div class="header-wrap el-col-sm-24">
       <a href="#" id="menu-open" class="menu-open header-btn i-menu hide-after-lg"></a>
       <div class="header-logo">
         <router-link :to="'/'" class="header-logo-link">
@@ -9,25 +9,20 @@
       </div>
 
       <nav class="header-navigation">
+        <!---->
         <ul class="header-navigation-wrap u-unstyled header-show">
           <li>
             <a class="navigation-link nav-toggle active" aria-hidden="false">
+
             </a>
           </li>
         </ul>
+        <!-- Web -->
         <ul class="header-navigation-wrap u-unstyled header-hide">
-          <li>
-            <router-link :to="'notice'" class="navigation-link">Notice</router-link>
-          </li>
-          <li>
-            <router-link :to="'supporter'" class="navigation-link">Supporter</router-link>
-          </li>
-          <li>
-            <router-link :to="'blog'" class="navigation-link">Blog</router-link>
-          </li>
-          <li>
-            <router-link :to="'contact'" class="navigation-link">Contact</router-link>
-          </li>
+          <router-link class="navigation-link" tag="li" :to="'notice'">Notice</router-link>
+          <router-link class="navigation-link" tag="li" :to="'supporters'">Supporters</router-link>
+          <router-link class="navigation-link" tag="li" :to="'blog'">Blog</router-link>
+          <router-link class="navigation-link" tag="li" :to="'aboutme'">About Me</router-link>
         </ul>
       </nav>
 
