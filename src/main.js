@@ -19,10 +19,8 @@ Vue.use(BootstrapVue)
 Vue.use(mavonEditor)
 
 /* eslint-disable no-new */
-const vm = new Vue({
+new Vue({
   el: '#app',
   router,
   render: h => h(App)
 })
-
-export default vm

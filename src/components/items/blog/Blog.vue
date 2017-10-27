@@ -8,40 +8,52 @@
       </div>
     </div>
 
-    <pagination
-      :pageSize="results.pageSize"
-      :pageIndex="results.pageIndex"
-      :totalCount="results.totalCount"
-    >
-    </pagination>
-
-    <card-list
-      :items="filterResults"
-      :filter="filter"
-    >
-
-    </card-list>
-
+    <div class="el-row margin-top-30">
+      <main-list
+        :listType="listType"
+        :results="results"
+        :filters="filters"
+      >
+      </main-list>
+    </div>
   </div>
 </template>
 
 <script>
-  import CardList from '@/components/common/mixin/list/CardList.vue'
-  import Pagination from '@/components/common/mixin/list/Pagination'
-  import {filterMixin} from '@/components/common/mixin/list/filterMixin.js'
+  import DummyBlogs from '@/assets/dummy/blog.json'
+  import MainList from '@/components/common/mixin/list/MainList'
 
   export default {
-    mixins: [filterMixin],
     components: {
-      CardList, Pagination
+      MainList
     },
     data () {
       return {
-        watch: {
-          pageIndex: (value) => {
-            console.log('Blog', value)
-          }
+        listType: 1,
+        // items is Array
+        results: {
+          items: DummyBlogs,
+          pageIndex: 1,
+          pageSize: 12,
+          totalCount: DummyBlogs.length
+        },
+        filters: {
+          type: 1,
+          text: '',
+          sortBy: 'desc'
         }
+      }
+    },
+    methods: {
+      // mouted Set Results
+      mounted () {
+        console.log('Mounted')
+        // axios.get("/fa").then(response => this.results = response.data);
+      }
+    },
+    watch: {
+      pageIndex: (value) => {
+        console.log('Blog', value)
       }
     }
   }
