@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d905bdb2e7974e7488c456a6127ac33b)](https://www.codacy.com/app/shun10114/only-vue-project?utm_source=github.com&utm_medium=referral&utm_content=Seolhun/only-vue-project&utm_campaign=badger)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/Seolhun/only-vue-project.svg?columns=all)](http://waffle.io/Seolhun/only-vue-project)
 ---
 # [First-vue](https://github.com/Seolhun/only-vue-project)
