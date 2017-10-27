@@ -21,7 +21,7 @@
 
 <script>
   import DummyBlogs from '@/assets/dummy/blog.json'
-  import MainList from '@/components/common/mixin/list/MainList'
+  import MainList from '@/components/common/list/MainList'
 
   export default {
     components: {
@@ -52,8 +52,14 @@
       }
     },
     watch: {
-      pageIndex: (value) => {
-        console.log('Blog', value)
+      filters (value) {
+        console.log('filters', value)
+      },
+      pageIndex (value) {
+        console.log('watch pageIndex', value)
+      },
+      pageSize (value) {
+        console.log('watch pageSize', value)
       }
     }
   }

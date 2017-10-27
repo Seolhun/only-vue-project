@@ -69,4 +69,4 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 ---
 ## Simple Component Image
 1. Item Component
-<img src="./readmeImage/ItemPage.png" width="900" height="500">
+<img src="./readmeImage/ItemPage.png" width="450" height="700">
