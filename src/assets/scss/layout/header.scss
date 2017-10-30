@@ -16,8 +16,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: .9375rem;
-  padding-right: .9375rem;
   position: relative;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -81,12 +79,17 @@
 }
 
 .nav-toggle:before {
-  color: $fc-color; /* Edit this to change the icon color */
-  font: normal 55px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
+  /* Edit this to change the icon color */
+  color: $fc-color;
+  /* Edit font-size (28px) to change the icon size */
+  font: normal 55px/55px "responsivenav";
   text-transform: none;
   text-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
-  content: "\2261"; /* Hamburger icon */
+  /* Hamburger icon */
+  content: "\2261";
   text-indent: 0;
   speak: none;
   width: 100%;
