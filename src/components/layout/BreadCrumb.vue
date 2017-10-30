@@ -16,7 +16,6 @@
 
 <script>
   export default {
-    props: ['Test', 'Test2'],
     data () {
       return {
         paths: []

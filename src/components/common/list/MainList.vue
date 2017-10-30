@@ -60,12 +60,14 @@
       return {
       }
     },
+    compute: {
+      created () {
+        console.log('Created mixin in MainList.vue')
+      }
+    },
     methods: {
       removeSpace (value) {
         return value.replace(/\s/g, '')
-      },
-      created () {
-        console.log('Created mixin in MainList.vue')
       },
       // To Search Is Not Active
       extractIsNotActiveItems (items) {
