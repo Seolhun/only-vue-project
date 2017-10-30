@@ -43,7 +43,7 @@
 
 <script>
   export default {
-    name: 'footer-menu'
+    name: 'footerMenu'
   }
 </script>
 
